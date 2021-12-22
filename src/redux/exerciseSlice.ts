@@ -5,7 +5,7 @@ export const addExercise: any = createAsyncThunk(
   async (exercise: any) => {
     console.log(exercise);
     const response = await fetch(
-      `/exercises/${exercise.email}`,
+      `https://spartan-db.herokuapp.com/exercises/${exercise.email}`,
       {
         method: 'POST',
         headers: {
@@ -32,7 +32,7 @@ export const addExercise: any = createAsyncThunk(
 export const getExercises: any = createAsyncThunk(
   'exercises/getExercises',
   async (email) => {
-    const response = await fetch(`/exercises/${email}`, {
+    const response = await fetch(`https://spartan-db.herokuapp.com/exercises/${email}`, {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',
@@ -56,7 +56,7 @@ export const getExercises: any = createAsyncThunk(
 export const deleteExercise: any = createAsyncThunk(
   'exercises/deleteExercise',
   async (id) => {
-    const response = await fetch(`/exercises/${id}`, {
+    const response = await fetch(`https://spartan-db.herokuapp.com/exercises/${id}`, {
       method: 'DELETE',
       headers: {
         'Content-Type': 'application/json',
@@ -79,7 +79,7 @@ export const updateExercise: any = createAsyncThunk(
   'exercises/updateExercise',
   async (exercise: any) => {
     const response = await fetch(
-      `/exercises/${exercise.exercise_id}`,
+      `https://spartan-db.herokuapp.com/exercises/${exercise.exercise_id}`,
       {
         method: 'PUT',
         headers: {

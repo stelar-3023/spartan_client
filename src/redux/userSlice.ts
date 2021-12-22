@@ -4,7 +4,7 @@ import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 export const accountDetails: any = createAsyncThunk(
   'user/getUserDetails',
   async () => {
-    const response = await fetch('/profile/', {
+    const response = await fetch('https://spartan-db.herokuapp.com/profile/', {
       method: 'POST',
       headers: { jwt_token: localStorage.token },
     });

@@ -49,7 +49,7 @@ export function SignupModal(props: any) {
     e.preventDefault();
     try {
       const body = { email, password, name };
-      const response = await fetch('/register', {
+      const response = await fetch('https://spartan-db.herokuapp.com/register', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
