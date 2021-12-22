@@ -122,8 +122,9 @@ const exerciseSlice = createSlice({
     },
     [deleteExercise.fulfilled]: (state: any, action: any) => {
       console.log('deleted exercise successfully');
-      let index = state.exercises.findIndex(
-        ({ id }: any) => id === action.payload.id
+      const index = state.exercises.findIndex(
+        (exercise: any) =>
+          exercise.exercise_id === action.payload.exercise.exercise_id
       );
       state.exercises.splice(index, 1);
     },
