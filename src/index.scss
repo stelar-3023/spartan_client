@@ -1,0 +1,57 @@
+$mainColor: red;
+$secondaryColor: white;
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: black;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+@font-face {
+  font-family: 'Electrical';
+  src: local('Electrical'), url('./fonts/electrical.ttf') format('truetype');
+  font-weight: normal;
+}
+
+h1 {
+  font-family: 'Electrical';
+  color: $secondaryColor;
+}
+
+h2 {
+  font-family: Zen Dots;
+  color: $mainColor;
+}
+
+img {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: auto;
+  max-width: 100%;
+  opacity: 0.4;
+}
+
+.log-button {
+  background-color: $mainColor;
+  color: $secondaryColor;
+}
+
+.save-button {
+  margin-right: 10px;
+}
+
+.cancel-log {
+  display: flex;
+  margin-left: auto;
+}

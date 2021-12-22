@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.5a738bcf.chunk.css",
+    "main.js": "/static/js/main.298d6f55.chunk.js",
+    "main.js.map": "/static/js/main.298d6f55.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.d377d1f0.js",
+    "runtime-main.js.map": "/static/js/runtime-main.d377d1f0.js.map",
+    "static/css/2.a8fe6d97.chunk.css": "/static/css/2.a8fe6d97.chunk.css",
+    "static/js/2.5724427b.chunk.js": "/static/js/2.5724427b.chunk.js",
+    "static/js/2.5724427b.chunk.js.map": "/static/js/2.5724427b.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.a8fe6d97.chunk.css.map": "/static/css/2.a8fe6d97.chunk.css.map",
+    "static/css/main.5a738bcf.chunk.css.map": "/static/css/main.5a738bcf.chunk.css.map",
+    "static/js/2.5724427b.chunk.js.LICENSE.txt": "/static/js/2.5724427b.chunk.js.LICENSE.txt",
+    "static/media/index.scss": "/static/media/electrical.40d81f21.ttf",
+    "static/media/exercise.aeee0cf6.jpg": "/static/media/exercise.aeee0cf6.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d377d1f0.js",
+    "static/css/2.a8fe6d97.chunk.css",
+    "static/js/2.5724427b.chunk.js",
+    "static/css/main.5a738bcf.chunk.css",
+    "static/js/main.298d6f55.chunk.js"
+  ]
+}
