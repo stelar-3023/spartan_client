@@ -1,4 +1,5 @@
 import reducer, { deleteExercise, getExercises } from '../redux/exerciseSlice';
+const request = require('supertest');
 
 describe('exerciseSlice', () => {
   describe('reducers', () => {
@@ -26,9 +27,11 @@ describe('exerciseSlice', () => {
       expect(getExercises).toBeDefined();
     });
     it('should fetch exercises', async () => {
-      expect.assertions(1);
-      const data = await getExercises();
-      expect(data).toBeDefined();
+      expect.assertions(3);
+      const response = await getExercises();
+      expect(response).toBeDefined();
+      expect(response.length).toBeGreaterThan(0);
+      expect(response.length).toEqual(3);
     });
   });
 });
